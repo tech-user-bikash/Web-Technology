@@ -1,0 +1,18 @@
+video - https://www.youtube.com/watch?v=FxgM9k1rg0Q
+docs - https://react.dev/
+react fiber - https://github.com/acdlite/react-fiber-architecture
+
+
+requirements
+-------------
+- VS Code
+    - 
+- Node Js
+
+Tips
+----
+- use vite library to to manage react application.
+    - npm create vite@latest
+    - npm i or install
+    - npm run dev
+
