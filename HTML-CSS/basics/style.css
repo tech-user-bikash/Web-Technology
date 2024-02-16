@@ -1,0 +1,22 @@
+*{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    border: 2px;
+}
+
+.navBar{
+    height: 60px;
+    background-color: black;
+}
+#logo{
+    color: #f08804;
+}
+button{
+    color: white;
+    background-color: #f08804;
+}
+a{
+    margin: 80px;
+    text-decoration: none;
+}

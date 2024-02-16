@@ -1,0 +1,15 @@
+video - https://www.youtube.com/watch?v=ESnrn1kAD4E&list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i&index=3
+Notes - https://drive.google.com/drive/folders/1wfNTKinBAV6CCxaI5lfSnnRFAYpy0uEl?usp=share_link
+free copyright photos - https://unsplash.com
+font and icons - https://fontawesome.com
+
+
+
+Tips
+-----
+- To create a circle in css, make square box(height and width same) then make border-radius=50%
+- block will always starts with new line.
+- inline will take the space is required. block will take 100% of screen width.
+- percentage(%) is used for child element. if parent is 100%, then mentioned 33% of 100% which is parent's percentage.
+- viewport is equal with screen size.
+- can use multiple class name for tag attribute with one class refernce.

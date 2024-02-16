@@ -1,0 +1,26 @@
+video link - https://www.youtube.com/watch?v=HcOc7P5BMi4&list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i
+Note Link - https://drive.google.com/drive/folders/1wfNTKinBAV6CCxaI5lfSnnRFAYpy0uEl?usp=share_link
+
+
+to see any website's source code
+---------------------------------
+view-source:https//www.google.com
+
+Tips
+----
+- whenever opne a link in new tab then use target = "_main" inside <a> tag.
+- ex: <a href = "google.com" target = "_main">Google</a>
+- <div> tag by default takes full width of screen.
+- <span> tag takes the actual size of content
+- <level> helps yo enable click on taxt for a radio button.
+- 
+
+Tags
+----
+<pre> = used to count space in any text. instead of <p> we can use <pre> tag.
+<main> = it is the parent tag of <section>, <article> and <aside>(used for adding the ads).
+<iFrame> = used to run any video in a website.
+page layout techniques
+----------------------
+- It will help to ranking the web page.
+- semantic(header, footer, etc) and non-semantic(div, span, etc) tags.
