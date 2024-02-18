@@ -15,4 +15,49 @@ Tips
     - npm create vite@latest
     - npm i or install
     - npm run dev
+- key needs to be used in react for better performance.
+- react-roter uses <Link> instead of <a>    
+- loader in react router used to fetch api. it acts even before useEffect().
+- Outlet in react used for dynamic contenet by keeping header and footer inplace.
+- useParam() hook used for dynamic data passed in react router.
+- context api came for solving props problem. It is part of react.
+- Redux used for stat management in a better manner.
 
+Redux Toolkit (RTK)
+-------------------
+- History (1.15-1.30)
+- Redux is core library and react-redux is the bridge between react-redux and redux.
+- redux-Toolkit
+Steps
+------
+- create the store.
+- any updation is required inside store , used by the reducer. Functionality parts are mentioned in reducer.
+- useSelector(){select any valu in store} and useDispatcher() {dispatch any value from store}
+- useDispatch() uses reducers to add the data in store.
+- useSelector() used to get the list of store objects.
+    - it has state paratmeter as a callback to get the access of store.
+
+Store Steps
+-----------
+- use configstore and export it.
+- create reducers.(slices named as in redux-toolkit)
+- create features folder and create the reducers.
+
+Reducers Steps
+--------------
+- create initial_state, it can be array or object.
+- create slice( bigger version of reducer(Functionality)).
+    - make property of it.
+    - name = used in redux tollkit extension in chrome.
+    - inintialState = every slice has one inintialState.
+    - reducers = It has properties and functions(each function has paratmeter of state(all the values of inintialState) and action(passing value to this function)).
+    - export all the funstions from reducer.
+    - export all the reducers from slice which will used as a reference in store.
+
+
+Projects
+--------
+- Dependencies needs to be installed to complete this project.
+- @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form
+- .env file placed in root directory.
+- move the .env properties to a package called config.
