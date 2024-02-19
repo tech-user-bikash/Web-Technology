@@ -1,16 +1,15 @@
-import config from "../config/config.js";
+import envConfig from "../env_config/envConfig.js";
 import { Client, Account, ID } from "appwrite";
-import { AuthService } from "./auth";
 
-export class AuthService {
+class AuthService {
   client = new Client();
   account;
 
   // to initialize the env propes for appwrite url
   constructor() {
     this.client
-      .setEndpoint(config.appwriteUrl)
-      .setProject(config.appwriteProjectId);
+      .setEndpoint(envConfig.appwriteUrl)
+      .setProject(envConfig.appwriteProjectId);
     this.account = new Account(this.client);
   }
 
