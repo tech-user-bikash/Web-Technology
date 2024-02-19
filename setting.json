@@ -1,0 +1,38 @@
+{
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Monokai",
+    "git.autofetch": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "files.associations": { "*.scss": "postcss" },
+    "editor.acceptSuggestionOnEnter": "smart",
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "css.lint.unknownAtRules": "ignore",
+    // tailwindCSS settings
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "javascriptreact": "javascriptreact",
+      "typescript": "typescript",
+      "typescriptreact": "typescriptreact",
+      "html": "HTML"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+  
