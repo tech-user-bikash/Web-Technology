@@ -22,12 +22,13 @@ Tips
 - useParam() hook used for dynamic data passed in react router.
 - context api came for solving props problem. It is part of react.
 - Redux used for stat management in a better manner.
+- index is mandatory to query the result in appwrite.
 
 Redux Toolkit (RTK)
 -------------------
 - History (1.15-1.30)
 - Redux is core library and react-redux is the bridge between react-redux and redux.
-- redux-Toolkit
+- redux-Toolkit (used for track of an action)
 Steps
 ------
 - create the store.
@@ -61,3 +62,4 @@ Projects
 - @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form
 - .env file placed in root directory.
 - move the .env properties to a package called config.
+- everytime whenever data is fetch through network call, better to make a loading state. It helps for conditional rendering. if true then show loading else show the data. initially make true as it will load the data in dashboard.
