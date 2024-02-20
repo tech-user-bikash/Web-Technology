@@ -63,3 +63,6 @@ Projects
 - .env file placed in root directory.
 - move the .env properties to a package called config.
 - everytime whenever data is fetch through network call, better to make a loading state. It helps for conditional rendering. if true then show loading else show the data. initially make true as it will load the data in dashboard.
+- navigation bar will placed inside loop.
+- while looping data use ? to check if data present in the list to loop or not.
+- 5.56.36 react-hook-form starts.

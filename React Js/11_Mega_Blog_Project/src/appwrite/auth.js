@@ -7,7 +7,6 @@ class AuthService {
 
   // to initialize the env propes for appwrite url
   constructor() {
-    console.log("constructor called..");
     this.client
       .setEndpoint(envConfig.appwriteUrl)
       .setProject(envConfig.appwriteProjectId);
@@ -17,20 +16,18 @@ class AuthService {
   // make the structure of the functionality to reuse for every service
   async createAccount({ email, password, name }) {
     try {
-      console.log("createAccount called..");
       const userAccount = await this.account.create(
         ID.unique(),
         email,
         password,
         name
       );
-      const annonymousUserAccount = userAccount.createAnonymousSession();
       // check if account created then make the user to login else return the userAcoount
-      if (annonymousUserAccount) {
+      if (userAccount) {
         // call another method
         return this.login({ email, password });
       } else {
-        return annonymousUserAccount;
+        return userAccount;
       }
     } catch (error) {
       throw error;
@@ -40,9 +37,7 @@ class AuthService {
   // create login function
   async login({ email, password }) {
     try {
-      console.log("login called..");
-      const account =  await this.account.createEmailSession(email, password);
-      return  account.createEmailSession();
+      return await this.account.createEmailSession(email, password);
     } catch (error) {
       throw error;
     }
@@ -51,7 +46,6 @@ class AuthService {
   // get current user to show the dashboard
   async getCurrentUser() {
     try {
-      console.log("getCurrentUser called..");
       return await this.account.get();
     } catch (error) {
       console.log(
