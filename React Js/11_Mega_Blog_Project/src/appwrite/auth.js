@@ -44,9 +44,17 @@ class AuthService {
   }
 
   // get current user to show the dashboard
-  async getCurrentUser() {
+  getCurrentUser() {
     try {
-      return await this.account.get();
+      const currentUser =  this.account.get();
+      currentUser.then((response)=>{
+        console.log("Response : "+response);
+      }, (fail)=>{console.log(fail)})
+      console.log("Hi -->"+
+        currentUser.then(res=>{console.log(res)})
+        .catch(error=>console.log(error))
+      );
+      return currentUser;
     } catch (error) {
       console.log(
         "Appwrite Service :: Auth :: getCurrentUser :: error ",
